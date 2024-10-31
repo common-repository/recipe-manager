@@ -1,0 +1,73 @@
+/* ==========================================================================
+   Single Recipe
+   ========================================================================== */
+
+.single-recipe, .recipe-shortcode.full-recipe {
+
+  .recipe-wrapper {
+
+    .entry-summary {
+      color: inherit;
+
+      h1, h2, h3 {
+        margin-top:.5em;
+        margin-bottom:.7em;
+      }
+      h4, h5, h6 {
+        margin-top:1.2em;
+        margin-bottom:.8em;
+      }
+    }
+
+    .images {
+      margin-bottom: $base_spacing;
+
+      a {
+        border: 0;
+        text-decoration: none;
+        display: inline-block;
+        outline: 0;
+
+      }
+
+      img {
+        display: inline-block;
+      }
+
+    }
+
+    .recipe-meta {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+
+      columns: 2;
+    }
+
+    .recipe-times {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+      display: block;
+      line-height: 1.25;
+
+      columns: 3;
+      list-style: none;
+
+      li {
+        strong {
+          display: block;
+        }
+      }
+    }
+
+    .recipe-description {
+      @include section-bottom();
+      padding: 0 0 $base_spacing;
+
+      > *:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+  }
+
+}
